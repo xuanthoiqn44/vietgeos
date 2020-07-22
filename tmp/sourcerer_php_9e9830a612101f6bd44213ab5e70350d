@@ -1,0 +1,29 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_9e9830a612101f6bd44213ab5e70350d($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+$user = JFactory::getUser(); 
+
+ 
+$user->guest; 
+
+ 
+$user->authorise('core.admin', 'com_component') 
+
+ 
+ echo $user->username; 
+
+ 
+jimport( 'joomla.user.helper' ); 
+$user = JFactory::getUser();
+$userId = $user->id; 
+$userProfile = JUserHelper::getProfile( $userId );
+
+echo "Main Address :" . $userProfile->profile['address1'];;
+return get_defined_vars();
+;}

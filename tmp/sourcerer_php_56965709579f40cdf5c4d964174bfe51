@@ -1,0 +1,22 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_56965709579f40cdf5c4d964174bfe51($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+$group= JAccess::getUsersByGroup(2); 
+ 
+ 
+
+ 
+foreach($group as $user_id) { 
+ $user = JFactory::getUser($user_id); 
+<tr> 
+ <td> $user->name </td>  
+</tr> 
+};;
+return get_defined_vars();
+;}

@@ -1,0 +1,27 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_d0c0bfd167cdc5a93f7c0a1d852cb614($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+$user = JFactory::getUser(); 
+
+ 
+$user->guest; 
+
+ 
+$user->authorise('core.admin', 'com_component') 
+
+ 
+ echo $user->username; 
+
+ 
+jimport( 'joomla.user.helper' ); 
+$user = JFactory::getUser();
+$userId = $user->id; 
+$userProfile = JUserHelper::getProfile( $userId );;
+return get_defined_vars();
+;}

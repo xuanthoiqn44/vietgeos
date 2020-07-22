@@ -1,0 +1,165 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_7c133ae3d93380c029553b0a82d852e9($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+//code php 
+defined('_JEXEC') or die; 
+
+ 
+ 
+
+ 
+$groupregistry= JAccess::getUsersByGroup(2); //change number in the brackets 
+
+ 
+foreach( $groupregistry as $user_id ) 
+
+ 
+{ 
+ $user = JFactory::getUser($user_id); 
+//check user block 
+
+ 
+ if($user->block == 0) 
+{ 
+
+ 
+//get avatar by user_id 
+
+ 
+$db = JFactory::getDbo();
+ 
+
+ 
+$query = $db->getQuery(true); 
+ 
+
+ 
+$query->select($db->quoteName('profile_value')); 
+ 
+
+ 
+$query->from($db->quoteName('#__user_profiles')); 
+
+ 
+$query->where($db->quoteName('user_id')." = ".$db->quote((int)$user_id)); 
+ 
+
+ 
+$query ->where($db->quoteName('profile_key') . " = ".$db->quote('cmavatar')); 
+
+ 
+try
+{
+    $db->setQuery($query); 
+
+ 
+$currentAvatar = $db->loadResult(); 
+
+ 
+; // If it fails, it will throw a RuntimeException  
+} catch (RuntimeException $e) { throw new Exception($e->getMessage()); } 
+
+ 
+if (!empty($currentAvatar)) 
+{ 
+ $avatarPath = 'images/image_user' . '/' . $currentAvatar . '.' .'jpg'; 
+
+ 
+$html = '<div class="avatar">'; 
+ $html .= '<img class="avatar" src="' . $avatarPath . '">'; 
+
+ 
+ $html .= '</div>'; 
+} 
+else 
+{ 
+$avatarPath = 'images/image_user'. '/'.'1464429175user.jpg'; 
+
+ 
+$html = '<div class="avatar">'; 
+$html .= '<img class="avatar" src="' . $avatarPath . '">'; 
+
+ 
+$html .= '</div>'; 
+
+ 
+} 
+//get decryption each user 
+
+ 
+$db = JFactory::getDbo(); 
+$query = $db->getQuery(true); 
+ 
+
+ 
+$query->select($db->quoteName('value')); 
+ 
+
+ 
+$query->from($db->quoteName('#__fields_values')); 
+
+ 
+$query->where($db->quoteName('item_id')." = ".$db->quote((int)$user_id)); 
+
+ 
+$query ->where($db->quoteName('field_id') . " = ".$db->quote('9')); 
+
+ 
+$db->setQuery($query); 
+
+ 
+$decription = $db->loadResult(); 
+ 
+//get web page each user 
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+ 
+
+ 
+$query->select($db->quoteName('value')); 
+ 
+
+ 
+$query->from($db->quoteName('#__fields_values')); 
+
+ 
+$query->where($db->quoteName('item_id')." = ".$db->quote((int)$user_id)); 
+
+ 
+$query ->where($db->quoteName('field_id') . " = ".$db->quote('13')); 
+
+ 
+$db->setQuery($query); 
+
+ 
+$webpage = $db->loadResult(); 
+
+ 
+//end get avatar by user_id 
+
+ 
+echo "<div class='col-md-4 col-sm-4 col-xs-12'>"; 
+echo "<div class='_user'>"; 
+echo "$html"; 
+//table content user 
+echo "<div class="_decription"></div>" 
+echo "</div>"; 
+
+ 
+echo "</div>"; 
+
+ 
+} 
+};;
+return get_defined_vars();
+;}

@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>dd_speedtruck_109</name>
+  <creationDate>2017-10-20</creationDate>
+  <version>1.0</version>
+  <authorUrl>http://diablodesign.eu</authorUrl>
+  <copyright>Copyright (C) DiabloDesign License All rights reserved.</copyright>
+ 
+   <description>
+  <![CDATA[
+    <style type="text/css" media="all">
+        <!--
+        h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+        h2 {clear:both;font-family: Georgia, sans-serif;font-size:20px;  font-weight: normal; }
+        -->
+      </style>
+     
+          <div class="dd-description clearfix">
+          <h1><img src="http://diablodesign.eu/syg.png" /></a><span style="color: #cc0607;"> DD SPEEDTRUCK 109 Free Version</span></h1>
+            <hr>
+    
+      <div class="pull-left" style="max-width: 35.69%;">
+      <img style="max-width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px; background: #fff; border: 1px solid #e1e1e1;" src="../templates/dd_speedtruck_109/images/sc.jpg" />
+    
+    </div>
+    <div class="pull-left" style="max-width: 64.31%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 30px;">
+      <div style="margin-bottom: 20px;">
+        <div style="margin-bottom: 20px;">
+      
+      
+      <div style="margin: 20px 0 0;">
+        <span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Not for commercial!!! for commercial use, you must pay a special license (10 EURO)</li></span>
+      <span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Buy template PRO version</li></span>
+      <a style="text-decoration: none !important; outline: none;" target="_blank" href="http://diablodesign.eu/">
+            <img src="http://diablodesign.eu/images/paypal.gif" />
+          </a>
+          <a href="http://diablodesign.eu/" target="_blank" style="margin: 0 20px; color: #3ea5ea;">Buy Commercial license AMOUNT 10 €</a>
+          <span style="color: #ff0000; display: block; margin-top: 2px;"><li>Pełna wersja szablonu wyglądająca tak jak na demo kosztuje (40PLN Brutto).</li> <li> Pełną wersję szablonu można kupić na naszej stronie internetowej.<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.diablodesign.eu/formularz-zamowienia">www.diablodesign.eu</a></li></span>
+
+        </div></div></div></div>
+  </div>
+  ]]>
+  </description>
+  <files>
+    <file>CloudZoom.js</file>
+    <file>Readme.txt</file>
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions-additional.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>layout.core.js</file>
+    <file>layout.ie.css</file>
+    <file>layout.ie.js</file>
+    <file>modrender.php</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+    <file>virtuemart.js</file>
+    <folder>css</folder>
+    <folder>data</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>plugins</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+    <folder>site</folder>
+  </files>
+  <positions>
+    <position>blank-1</position>
+    <position>blank-2</position>
+    <position>blank-3</position>
+    <position>blank-4</position>
+    <position>bottom-banner-1</position>
+    <position>breadcrumb</position>
+    <position>dd-footer-1</position>
+    <position>dd-footer-2</position>
+    <position>dd-footer-3</position>
+    <position>dd-footer-4</position>
+    <position>dd-footer-5</position>
+    <position>dd-footer-6</position>
+    <position>dd-footer-7</position>
+    <position>dd-top-1</position>
+    <position>dd-top-2</position>
+    <position>dd-top-3</position>
+    <position>dd-top-4</position>
+    <position>dd-top-5</position>
+    <position>dd-top-6</position>
+    <position>dd-top-7</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>slideshow</position>
+    <position>topbanner-1</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/dd_speedtruck_109/fields">
+      
+      <fieldset name="config" label="Configuration">
+          <field type="spacer" class="text" label="...........................................LOGO....................................................." /> 
+          <field name="logoFile" default="templates/dd_speedtruck_109/images/designer/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+      
+          <field type="spacer" class="text" label="......................License.KEY..................................................................." />         
+          <field name="license" type="text" default="" size="50" label="License key" description="License key" disabled="false"/>
+          <field type="spacer" class="text" label="Aby uzyskać pełną wersję szablonu należy wykupić licencję." />       
+          <field type="spacer" class="text" label="For a complete version of the template, you need to purchase a license." />  
+
+          <field type="spacer" class="text" label="...........................................FAVICON.................................................." />    
+          <field name="fav" type="media" label="Upload favicon" description="" default="templates/dd_speedtruck_109/images/designer/favicon.ico" />
+
+      </fieldset>
+      
+           <fieldset name="footercontact" label="Header Contact">
+           <field type="spacer" class="text" label="...............................Phone..............................................................." />
+           <field name="bh1" type="text" label="number"  default="12-345-678"/>
+           <field name="bh2" type="text" label="email adress"  default="info@company.com"/>
+              <field name="adress1_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+           <field type="spacer" class="text" label="...............................ADRESS.............................................................." />
+           <field name="bh3" type="text" label="adress line 1"  default="4934 Irving Place,"/>
+           <field name="bh4" type="text" label="adress line 2"  default=" Pond, MO 63040"/>
+              <field name="adress2_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+           
+           <field type="spacer" class="text" label="...........................................Social.................................................." />
+           
+          
+           
+           <field type="spacer" class="text" label="...........................................FACEBOOK.................................................." />
+           <field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="facebook_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+           </field>
+        
+           <field type="spacer" class="text" label=".........................................TWITTER......................................................" />
+           <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="twitter_off" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+      
+          <field type="spacer" class="text" label=".........................................GOOGLE+........................................................" />
+          <field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+          <field name="google_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          <field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+          <field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="pinterest_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          
+              <field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+          <field name="linkedin" type="text" default="//linkedin.com/shareArticle?title=&amp;mini=true&amp;url=" label="pinterest url:" description="linkedin link" filter="string" />
+          <field name="linkedin_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+
+              <field type="spacer" class="text" label=".........................................Search............................................." />
+          
+          <field name="search_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+   
+
+      </fieldset>
+      <fieldset name="slideshow" label="Slideshow">
+
+          <field type="spacer" class="text" label="...............................SLIDE.1.............................................................." />  
+          <field name="slide1_image" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/slideshow/1.jpg"/>
+          <field name="slide1_text1" type="text" label="Caption 1"  default="Export &amp;Logistic Services"/>
+          <field name="slide1_text2" type="text" label="Caption 2"  default="We Can Offer The Most Competitive Rates"/>
+          <field name="slide1_imagelink" type="text" default="http://" size="50" label="Image url" /> 
+          <field name="slide1_button_name" type="text" default="About Us" size="50" label="button 1" />
+          <field name="slide1_button_link" type="text" default="http://" size="50" label="http://" />
+           <field name="slide1_button_name2" type="text" default="Start Now" size="50" label="button 2" />
+          <field name="slide1_button_link2" type="text" default="http://" size="50" label="http://" /> 
+              
+          <field name="close_button" type="radio" default="1" class="btn-group"  label="Disable button" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+          
+          <field name="slide1_on_off" type="radio" default="1" class="btn-group"  label="Close slide 1" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+          
+        
+      
+          <field type="spacer" class="text" label="...............................SLIDE.2................................................................" />  
+          <field name="slide2_image" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/slideshow/2.jpg"/>
+          <field name="slide2_text1" type="text" label="Caption 1"  default="Lorem ipsum dolor sit amet"/>
+          <field name="slide2_text2" type="text" label="Caption 2"  default="ENTER YOUR TEXT HERE"/>
+          <field name="slide2_text3" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+          <field name="slide2_imagelink" type="text" default="http://" size="50" label="Image url" /> 
+          <field type="spacer" label="Close slide 2 " />
+          <field name="slide2_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+        
+          <field type="spacer" class="text" label="...............................SLIDE.3................................................................" /> 
+          <field name="slide3_image" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/slideshow/3.jpg"/>
+          <field name="slide3_text1" type="text" label="Caption 1"  default="Lorem ipsum dolor sit amet"/>
+          <field name="slide3_text2" type="text" label="Caption 2"  default="ENTER YOUR TEXT HERE"/>
+          <field name="slide3_text3" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+          <field name="slide3_imagelink" type="text" default="http://" size="50" label="Image url" />
+          <field type="spacer" label="Close slide 3 " />
+          <field name="slide3_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+        
+          <field type="spacer" class="text" label="...............................SLIDE.4................................................................" /> 
+          <field name="slide4_image" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/slideshow/4.jpg"/>
+          <field name="slide4_text1" type="text" label="Caption 1"  default="Lorem ipsum dolor sit amet"/>
+          <field name="slide4_text2" type="text" label="Caption 2"  default="ENTER YOUR TEXT HERE"/>
+          <field name="slide4_text3" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+          <field name="slide4_imagelink" type="text" default="http://" size="50" label="Image url" />
+          <field type="spacer" label="Close slide 4 " />
+          <field name="slide4_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+        
+      
+          <field type="spacer" class="text" label="...............................SLIDE.5................................................................" /> 
+          <field name="slide5_image" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/slideshow/5.jpg"/>
+          <field name="slide5_text1" type="text" label="Caption 1"  default="Lorem ipsum dolor sit amet"/>
+          <field name="slide5_text2" type="text" label="Caption 2"  default="ENTER YOUR TEXT HERE"/>
+          <field name="slide5_text3" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+          <field name="slide5_imagelink" type="text" default="http://" size="50" label="Image url" />
+          <field type="spacer" label="Close slide 5 " />
+          <field name="slide5_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+          
+          <field type="spacer" class="text" label="..........................................Speed slideshow............................................." />   
+          <field name="speed" type="text" default="4600" size="50"  label="Speed slideshow 0/ms " disabled="false"/>
+
+
+          
+          <field type="spacer" label="Dispalay Slideshow / turns on the position of the slideshow module "/>
+          <field name="slideshow_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+          </field>    
+
+      </fieldset>
+      <fieldset name="movie" label="Youtube Movie">
+     
+      <field type="spacer" class="text" label="...........................................Youtube movie 1................................................" />
+     
+      <field name="video" type="text" default="RjfNFo1M4YI" size="50" label="ID youtube" description="ID youtube"/>
+      <field name="start" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+
+		  <field name="autoplay" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        <field name="show" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        
+        <field name="showinfo" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        <field type="spacer" class="text" label="...........................................Video text................................................" />
+        <field name="vti" type="text" default="Volvo FH 16 700 HP" size="50" label="Video Title" />
+        <field name="vte" type="text" default="Promotion-Tanıtım" size="50" label="Video Text" />
+        
+      
+      
+      
+      
+      
+      
+      <field type="spacer" class="text" label="...........................................Youtube movie 2................................................" />
+      <field name="video2" type="text" default="QX7G0bikl70" size="50" label="ID youtube" description="ID youtube"/>
+      <field name="start2" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+      <field name="autoplay2" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        <field name="show2" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        
+        <field name="showinfo2" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        <field type="spacer" class="text" label="...........................................Video text................................................" />
+        <field name="vti1" type="text" default="Top 8 Futuristic Trucks " size="50" label="Video Title" />
+        <field name="vte1" type="text" default="2017 / 2018 You Must See" size="50" label="Video Text" />
+        
+        <field type="spacer" class="text" label="...........................................Youtube movie 3................................................" />
+      <field name="video3" type="text" default="grH95H6o6vQ" size="50" label="ID youtube" description="ID youtube"/>
+      <field name="start3" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+      <field name="autoplay3" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        <field name="show3" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+        
+        <field name="showinfo3" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+          <option value="0">OFF</option>
+          <option value="1">ON</option>
+        </field>
+      
+    <field type="spacer" class="text" label="...........................................Video text................................................" />
+        <field name="vti2" type="text" default="CC Truck " size="50" label="Video Title" />
+        <field name="vte2" type="text" default="Promo Video" size="50" label="Video Text" />
+       
+            
+        <field type="spacer" label="View on pages" />
+       <field name="video_close" type="radio" default="1" class="btn-group"  label="" >
+          <option value="0">No Pages</option>
+          <option value="1">Hompage</option>
+          <option value="2">All Pages</option>
+          </field>    
+      </fieldset>
+     
+      <fieldset name="info" label="Info">
+        
+        <field name="in1" type="text" label="Title"  default="Working For" />
+        <field name="in2" type="text" label="Title line 2"  default="OUR CLIENTS" />
+        <field name="in3"  type="textarea" default="It has been found that it is impossible to keep a foundation of loyal customers without a foundation of loyal employees. The best employees prefer to work for companies that provide the type of exceptional value that creates customer loyalty, thus, creating loyalty has become the toughest test for leadership.There have always been rumors and questions regarding the driving test. Here we look at one of those rumors and give an insight into how the driving test is conducted."  rows="8" cols="60" label="Text" />
+        <field name="in4" type="text" label="Button Name"  default="Read More" />
+        <field name="in5" type="text" label="http://"  default="http://" />
+           <field name="info_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+          </field>
+       
+
+      </fieldset>
+      <fieldset name="threimages" label="3images box">
+     
+
+        <field type="spacer" class="text" label="...........................................box.1......................................................" />
+        <field name="im1" type="media" label="Upload image" description="" default="templates/dd_speedtruck_109/images/designer/imagebox/1.jpg"/>
+        <field name="im2" type="text" default="http://" size="50" label="http://" />  
+        <field name="im3" type="text" label="text"  default="Title 1"/>
+        <field name="im4" type="text" label="text"  default="Lorem ipsum dolor sit amet"/>
+
+        <field type="spacer" class="text" label="...........................................box.2......................................................" />
+        <field name="im5" type="media" label="Upload image" description="" default="templates/dd_speedtruck_109/images/designer/imagebox/2.jpg"/>
+        <field name="im6" type="text" default="http://" size="50" label="http://" />  
+        <field name="im7" type="text" label="text"  default="Title 3"/>
+        <field name="im8" type="text" label="text"  default="Lorem ipsum dolor sit amet"/>
+
+        <field type="spacer" class="text" label="...........................................box.3......................................................" />
+        <field name="im9" type="media" label="Upload image" description="" default="templates/dd_speedtruck_109/images/designer/imagebox/3.jpg"/>
+        <field name="im10" type="text" default="http://" size="50" label="http://" />  
+        <field name="im11" type="text" label="text"  default="Title 2"/>
+        <field name="im12" type="text" label="text"  default="Lorem ipsum dolor sit amet"/>
+
+        <field type="spacer" label="Dispalay Image BOX "/> 
+         <field name="imbc" type="radio" default="1" class="btn-group" label="" description="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+           </field>
+      </fieldset>
+      <fieldset name="person" label="testimonials">
+
+          <field name="t1" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t2"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t3" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t4" type="text" label="Position"  default="Truck Driver" />
+            
+          
+           <field name="t5" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t5c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+           </field>
+
+           <field name="t6" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t6c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+     
+          <field name="t7" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t7c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+            <field type="spacer" class="text" label="Close box1 testimonials" />
+             <field name="ct1" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+            
+          </field>  
+             <field type="spacer" class="text" label="...........................................Person.2.................................................." />
+          <field name="t8" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t9"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t10" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t11" type="text" label="Position"  default="Truck Driver" />
+            
+           
+           <field name="t12" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t12c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+		  </field>
+         
+           <field name="t13" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t13c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+          <field name="t14" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t14c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+               <field type="spacer" class="text" label="Close box2testimonials" />
+                <field name="ct2" type="radio" default="1" class="btn-group"  label="" >
+           <option value="0">OFF</option>
+             <option value="1">ON</option>
+          </field>  
+             <field type="spacer" class="text" label="...........................................Person.3.................................................." />
+        <field name="t15" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t16"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t17" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t18" type="text" label="Position"  default="Truck Driver" />
+            
+           
+           <field name="t19" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t19c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+		  </field>
+           <field name="t20" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t20c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+          <field name="t21" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t21c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          <field type="spacer" class="text" label="Close box3 testimonials" />
+          <field name="ct3" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+          </field>  
+          
+          <field type="spacer" class="text" label="...........................................Person.4.................................................." />
+        <field name="t22" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t23"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t24" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t25" type="text" label="Position"  default="Truck Driver" />
+            
+           
+           <field name="t26" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t26c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+		  </field>
+           <field name="t27" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t27c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+          <field name="t28" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t28c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          <field type="spacer" class="text" label="Close box4 testimonials" />
+          <field name="ct4" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+          </field>
+          
+            <field type="spacer" class="text" label="...........................................Person.5.................................................." />
+          <field name="t29" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t30"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t31" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t25c" type="text" label="Position"  default="Truck Driver" />
+            
+           
+           <field name="t32" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t32c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+		  </field>
+           <field name="t33" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t33c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+          <field name="t34" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t34c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+           <field type="spacer" class="text" label="Close box5 testimonials" />
+          <field name="ct5" type="radio" default="1" class="btn-group"  label="" >
+            <option value="0">OFF</option>
+             <option value="1">ON</option>
+          </field> 
+           <field type="spacer" class="text" label="...........................................Person.6.................................................." />
+          <field name="t35" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/person.jpg"/>
+          <field name="t36"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="t37" type="text" label="Name"  default="Dustin Lamont" />
+          <field name="t38" type="text" label="Position"  default="Truck Driver" />
+            
+           
+           <field name="t39" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="t39c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+		  </field>
+           <field name="t40" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="t40c" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+          <field name="41" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="t41c" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          <field type="spacer" class="text" label="Close box6 testimonials" />
+          <field name="ct6" type="radio" default="1" class="btn-group"  label="" >
+         <option value="0">OFF</option>
+             <option value="1">ON</option>
+          </field> 
+              <field type="spacer" label="Dispalay testimonials "/> 
+         <field name="testimonials_close" type="radio" default="1" class="btn-group" label="" description="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+           </field>      
+
+      </fieldset>
+      <fieldset name="news" label="News">
+			    <field type="spacer" class="text" label="..........................................Box1.............................." />         
+					
+			<field name="n1" type="media" label="Upload photo 1" description="" default="templates/dd_speedtruck_109/images/designer/news/1.jpg"/>
+			<field name="n2" type="text" default="Title 1" size="50" label="Title" description="Titleimage"/>
+		    <field name="n3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text" description="info text " />
+			<field name="n4" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+			<field name="n5" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+		    
+			<field type="spacer" class="text" label="..........................................Box2................................." /> 
+			<field name="n6" type="text" default="Title 2" size="50" label="Title" description="Title"/>
+			<field name="n7" type="media" label="Upload photo 2" description="" default="templates/dd_speedtruck_109/images/designer/news/2.jpg"/>
+			<field name="n8" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text" description="info text " />
+			<field name="n9" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+			<field name="n10" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+			
+			<field type="spacer" class="text" label="..........................................Box3................................." /> 
+			<field name="n11" type="text" default="Title 3" size="50" label="Title" description="Title"/>
+			<field name="n12" type="media" label="Upload photo 3" description="" default="templates/dd_speedtruck_109/images/designer/news/3.jpg"/>
+			<field name="n13" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text" description="info text " />
+			<field name="n14" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+			<field name="n15" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+			
+			<field type="spacer" class="text" label="..........................................Box4................................." /> 
+			<field name="n16" type="text" default="Title 4" size="50" label="Title" description="Title "/>
+			<field name="n17" type="media" label="Upload photo 3" description="" default="templates/dd_speedtruck_109/images/designer/news/4.jpg"/>
+			<field name="n18" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text" description="info text " />
+			<field name="n19" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+			<field name="n20" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+		
+		    <field type="spacer" label="Dispalay News "/> 
+             <field name="news_close" type="radio" default="1" class="btn-group" label="" description="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+           </field>   
+				
+	</fieldset>
+    <fieldset name="tabs" label="Tabs">
+        <field type="spacer" class="text" label="...........................................HEADER.........................................................." />
+        <field name="tat" type="text" label="Caption 1"  default="Title tabs"/>
+        <field type="spacer" class="text" label="...........................................tab1.........................................................." />
+        
+        <field name="ta1" type="text" label="Name tab 1"  default="Title tabs name 1"/>
+        <field name="ta2" type="text" label="Header title tabs 1"  default="Header title tabs" />
+        <field name="ta3"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  rows="8" cols="60" label="Text" />
+        <field name="ta4" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+		<field name="ta5" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+     
+
+        <field type="spacer" class="text" label="...........................................tab2.........................................................." />
+       
+        <field name="ta6" type="text" label="Name tab 2"  default="Title tabs name 2"/>
+        <field name="ta7" type="text" label="Header title tabs 2"  default="Header title tabs" />
+        <field name="ta8"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  rows="8" cols="60" label="Text" />
+        <field name="ta9" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+		<field name="ta10" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+       
+
+        <field type="spacer" class="text" label="...........................................tab3.........................................................." />
+       
+        <field name="ta11" type="text" label="Name tab 3"  default="Title tabs name 3"/>
+        <field name="ta12" type="text" label="Header title tabs 3"  default="Header title tabs" />
+        <field name="ta13"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.."  rows="8" cols="60" label="Text" />
+        <field name="ta14" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+		<field name="ta15" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+       
+
+        <field type="spacer" class="text" label="...........................................tab4.........................................................." />
+       
+        <field name="ta16" type="text" label="Name tab 4"  default="Title tabs name 4"/>
+        <field name="ta17" type="text" label="Header title tabs 4"  default="Header title tabs" />
+        <field name="ta18"  type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  rows="8" cols="60" label="Text" />
+        <field name="ta19" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+		<field name="ta20" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+
+
+       
+      
+        <field type="spacer" label="Dispalay Tabs "/>
+            <field name="tabs_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+          </field>
+         
+     </fieldset>
+     <fieldset name="gallery" label="Gallery">
+           <field name="gah" type="text" label="Header Title"  default="Gallery"/>
+           <field name="gahl" type="text" default="http://" size="50" label="Link" description="Link"/>
+           <field type="spacer" class="text" label="...............................image1.............................................................." />
+           <field name="ga1" type="media" label="Upload image" description="" default="templates/dd_speedtruck_109/images/designer/portfolio/1.jpg"/>
+           <field name="ga2" type="text" label="Title"  default="ENTER YOUR TEXT HERE"/>
+           <field name="ga3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           
+           <field name="ga5" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+           <field name="ga6" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+		   
+          
+            <field type="spacer" class="text" label="...............................image2.............................................................." />
+           <field name="ga7" type="media" label="Upload  image" description="" default="templates/dd_speedtruck_109/images/designer/portfolio/2.jpg"/>
+           <field name="ga8" type="text" label="Title"  default="ENTER YOUR TEXT HERE"/>
+           <field name="ga9" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="ga10" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+           <field name="ga11" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+           <field type="spacer" class="text" label="...............................image3.............................................................." />
+           <field name="ga12" type="media" label="Upload  image" description="" default="templates/dd_speedtruck_109/images/designer/portfolio/3.jpg"/>
+           <field name="ga13" type="text" label="Title"  default="ENTER YOUR TEXT HERE"/>
+           <field name="ga14" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="ga15" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+           <field name="ga16" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+
+           <field type="spacer" class="text" label="...............................image4.............................................................." />
+           <field name="ga17" type="media" label="Upload  image" description="" default="templates/dd_speedtruck_109/images/designer/portfolio/4.jpg"/>
+           <field name="ga18" type="text" label="Title"  default="ENTER YOUR TEXT HERE"/>
+           <field name="ga19" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="ga20" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+           <field name="ga21" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+
+           <field type="spacer" class="text" label="...............................image5.............................................................." />
+           <field name="ga22" type="media" label="Upload  image" description="" default="templates/dd_speedtruck_109/images/designer/portfolio/5.jpg"/>
+           <field name="ga23" type="text" label="Title"  default="ENTER YOUR TEXT HERE"/>
+           <field name="ga24" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="ga25" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+           <field name="ga26" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+
+           
+           <field type="spacer" label="Dispalay Portfolio"/>
+           <field name="portfolio_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+          </field>   
+
+      </fieldset>     
+       <fieldset name="infoz" label="Info 2">
+       <field name="inf1" type="media" label="Upload  image" description="" default="templates/dd_speedtruck_109/images/designer/truck.jpg"/>
+       <field name="inf2" type="text" label="Header Title"  default="Contact Us"/>
+       <field name="inf3" type="text" label="Header Title 2"  default="Where Success Begins"/>
+       <field name="inf4" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+       <field name="inf5" type="text" default="http://" size="50" label="Link button" description="Link button"/>
+       <field name="inf6" type="text" default="Read More" size="50" label="Title button" description="Title button"/>
+           <field type="spacer" label="Dispalay Info 2"/>
+           <field name="info2_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+          </field> 
+       
+       </fieldset> 
+	   <fieldset name="team" label="Team">
+		  <field name="temh" type="text" label="Title"  default="Team"/>
+		  <field type="spacer" class="text" label="...........................................Person.1.................................................." />
+		  <field name="tem1" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/team/1.png"/>
+
+		  <field name="tem2" type="text" label="Name"  default="Dustin Lamont" />
+		  <field name="tem3" type="text" label="Position"  default="The mechanic of the truck" />
+
+
+		   <field name="tem4" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+		   <field name="tem4c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+		   <field name="tem5" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+		   <field name="tem5c" type="radio" default="1" class="btn-group" label="" description="">
+			 <option value="0">OFF</option>
+			 <option value="1">ON</option>
+		   </field>
+		  <field name="tem6" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+		  <field name="tem6c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+			<field name="tem7" type="text" default="//plus.google.com/share?url=http://google.com" label="google url:" description="google link" filter="string" />
+		  <field name="tem7c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+		  <field type="spacer" class="text" label="...........................................Person.2.................................................." />
+		  <field name="tem8" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/team/2.png"/>
+
+		  <field name="tem9" type="text" label="Name"  default="Kristina Lamont" />
+		  <field name="tem10" type="text" label="Position"  default="Truck driver" />
+
+
+		   <field name="tem11" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+		   <field name="tem11c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+		   <field name="tem12" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+		   <field name="tem12c" type="radio" default="1" class="btn-group" label="" description="">
+			 <option value="0">OFF</option>
+			 <option value="1">ON</option>
+		   </field>
+		  <field name="tem13" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+		  <field name="tem13c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+			<field name="tem14" type="text" default="//plus.google.com/share?url=http://google.com" label="google url:" description="google link" filter="string" />
+		  <field name="tem14c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+		  <field type="spacer" class="text" label="...........................................Person.3.................................................." />
+		  <field name="tem15" type="media" label="Upload photo " description="" default="templates/dd_speedtruck_109/images/designer/team/3.png"/>
+
+		  <field name="tem16" type="text" label="Name"  default="Tom Lamont" />
+		  <field name="tem17" type="text" label="Position"  default="Truck driver" />
+
+
+		   <field name="tem18" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+		   <field name="tem18c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+		   <field name="tem19" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+		   <field name="tem19c" type="radio" default="1" class="btn-group" label="" description="">
+			 <option value="0">OFF</option>
+			 <option value="1">ON</option>
+		   </field>
+		  <field name="tem20" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+		  <field name="tem20c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+			<field name="tem21" type="text" default="//plus.google.com/share?url=http://google.com" label="google url:" description="google link" filter="string" />
+		  <field name="tem21c" type="radio" default="1" class="btn-group" label="" description="">
+			   <option value="0">OFF</option>
+			   <option value="1">ON</option>
+		  </field>
+
+				<field type="spacer" label="Dispalay Team"/>
+		   <field name="team_close_section" type="radio" default="1" class="btn-group"  label="" >
+			 <option value="0">No Pages</option>
+			 <option value="1">Hompage</option>
+			 <option value="2">All Pages</option>
+		  </field> 
+
+	   </fieldset>
+       <fieldset name="footer" label="footer">
+       <field type="spacer" class="text" label="...........................................Menu.................................................." />
+       
+       <field name="me1" type="text" default="About" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me2" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me3" type="text" default="Services  " size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me4" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me5" type="text" default="Works" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me6" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me7" type="text" default="Skills" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me8" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me9" type="text" default="Team" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me10" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me11" type="text" default="Testimonials" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me12" type="text" default="http://" size="50" label="Link" description="Link"/>
+       
+       <field name="me13" type="text" default="Contacts" size="50" label="Title Menu" description="Title Menu"/>
+       <field name="me14" type="text" default="http://" size="50" label="Link" description="Link"/>
+       <field type="spacer" label="close fotter menu"/>
+         <field name="mec" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+              <field type="spacer" label="Dispalay Footer"/>
+            <field name="footer_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+        </field>  
+       <field type="spacer" class="text" label="..........................................Foter.site.name........................................" />   
+       <field name="footer1" type="text" default="SpeedTruck" size="50" label="Site name" description="footer site name"/>
+            
+        <field type="spacer" class="text" label="...........................................Google.Maps.................................................." /> 
+        <field name="map1" type="text" default="Poland" label="Country" description="City" filter="string" />
+        <field name="map2" type="text" default="Kraków oś Na Stoku" label="Street" description="Street" filter="string" /> 
+        <field type="spacer" label="Dispalay Map"/>
+            <field name="maps_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">No Pages</option>
+             <option value="1">Hompage</option>
+             <option value="2">All Pages</option>
+        </field>    
+       
+       </fieldset>
+               <fieldset name="design" label="Design BY">
+        <field type="spacer" class="text" label="......................Disable.Design BY................................................................" />         
+        <field name="design_close_section" type="radio" default="1" class="btn-group"  label="" >
+          <option value="1">ON</option>
+          
+         </field>
+     </fieldset>
+     
+
+     
+    </fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_speedtruck_109.ini</language>
+  </languages>
+</extension>

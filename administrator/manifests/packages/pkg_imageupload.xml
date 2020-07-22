@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="3.0" method="install">
+ <name>Image Upload</name>
+ <author>Netamity</author>
+ <creationDate>July 2017</creationDate>
+ <packagename>imageupload</packagename>
+ <version>1.0.1</version>
+ <url>http://www.netamity.com/</url>
+ <packager>Netamity</packager>
+ <packagerurl>http://www.netamity.com/</packagerurl>
+ <description>Contains the fields plugin and the ajax plugin required</description>
+ <update>http://www.netamity.com/updates/pkg_imageupload.xml</update>
+ <files>
+   <file type="plugin" id="imageuploader" group="fields">plg_fields_imageupload.zip</file>
+   <file type="plugin" id="imageuploader" group="ajax">plg_ajax_imageupload.zip</file>
+ </files>
+ </extension>

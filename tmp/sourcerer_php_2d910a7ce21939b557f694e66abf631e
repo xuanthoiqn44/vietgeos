@@ -1,0 +1,87 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_2d910a7ce21939b557f694e66abf631e($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+//code php 
+defined('_JEXEC') or die; 
+
+ 
+$groupregistry= JAccess::getUsersByGroup(2); //change number in the brackets
+foreach($groupregistry as $user_id)  
+{ 
+ $user = JFactory::getUser($user_id); 
+//get avatar by user_id 
+
+ 
+  
+
+ 
+$db = JFactory::getDbo();
+ 
+
+ 
+$query = $db->getQuery(true); 
+ 
+
+ 
+$query  
+ ->select($db->quoteName('profile_value')) 
+
+ 
+->from($db->quoteName('#__user_profiles')) 
+
+ 
+->where($db->quoteName('user_id') . ' = ' . $db->q((int)$user_id)) 
+
+ 
+->where($db->quoteName('profile_key') . ' = ' . 'cmavatar'); 
+
+ 
+try
+{
+    $db->setQuery($query);
+    $db->loadObjectList(); 
+
+ 
+; // If it fails, it will throw a RuntimeException } catch (RuntimeException $e) { throw new Exception($e->getMessage()); } 
+
+ 
+/*if (!empty($currentAvatar)) 
+{ 
+ $avatarPath = 'images/image_user' . '/' . $currentAvatar . '.' .'jpg'; 
+
+ 
+$html = '<div class="avatar">'; 
+ $html .= '<img src="' . $avatarPath . '">'; 
+ $html .= '</div>'; 
+} 
+else 
+{ 
+$avatarPath = 'images/image_user'. '/'.'1464429175user.jpg'; 
+
+ 
+$html = '<div class="avatar">'; 
+$html .= '<img src="' . $avatarPath . '">'; 
+$html .= '</div>'; 
+
+ 
+}*/ 
+//end get avatar by user_id 
+
+ 
+echo "<tr>"; 
+echo "<td>"."</td>"; 
+echo "<td>"."<b>"; 
+ echo $user->name;  
+echo "</b>"."</td>"; 
+echo "</tr>"; 
+
+ 
+};;
+return get_defined_vars();
+;}

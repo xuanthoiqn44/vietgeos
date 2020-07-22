@@ -1,0 +1,74 @@
+<?php
+defined('_JEXEC') or die;
+function sourcerer_php_4b91df48bb97efa57e8a3f1174d2b0f0($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+public $profileKey = 'cmavatar'; 
+public $extension = 'jpg'; 
+
+ 
+$groupregistry= JAccess::getUsersByGroup(2); //change number in the brackets
+foreach($groupregistry as $user_id)  
+{ 
+ $user = JFactory::getUser($user_id); 
+ $currentAvatar = $this->getAvatar($user_id); 
+if (!empty($currentAvatar)) 
+{ 
+ $folder = $this->params->get('folder', ''); 
+ $avatarPath = $folder . '/' . $currentAvatar . '.' . $this->extension; 
+ $html = '<div class="cmavatar">'; 
+ $html .= '<img src="' . $avatarPath . '">'; 
+ $html .= '</div>'; 
+} 
+else 
+{ 
+
+ 
+$folder = $this->params->get('folder', ''); 
+$avatarPath = $folder . '/'.'1464429175user.jpg'; 
+
+ 
+$html = '<div class="cmavatar">'; 
+$html .= '<img src="' . $avatarPath . '">'; 
+$html .= '</div>'; 
+
+ 
+} 
+
+ 
+echo "<tr>"; 
+echo "<td>".$html."</td>"; 
+echo "<td>"."<b>"; 
+ echo $user->name;  
+echo "</b>"."</td>"; 
+echo "</tr>"; 
+
+ 
+} 
+//get avatar userid 
+function getAvatar($userId) 
+ { 
+ $db = JFactory::getDbo(); 
+ $query = $db->getQuery(true) 
+ ->select($db->qn('profile_value')) 
+ ->from($db->qn('#__user_profiles')) 
+ ->where($db->qn('user_id') . ' = ' . $db->q((int) $userId)) 
+ ->where($db->qn('profile_key') . ' = ' . 'cmavatar'); 
+ $currentAvatar = $db->setQuery($query)->loadResult(); 
+ 
+ // Check for a database error. 
+ if ($error = $db->getErrorMsg()) 
+ { 
+ throw new RuntimeException($error); 
+ 
+ return false; 
+ } 
+ 
+ return $currentAvatar; 
+ };;
+return get_defined_vars();
+;}
